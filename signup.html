@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body {
+            width: 100%;
+            background-color: rgb(228, 228, 228);
+            overflow-x: hidden;
+            margin: auto;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .signup {
+            margin: auto;
+        }
+        .form {
+            width: 450px;
+            height: 480px;
+            background: rgba(47, 47, 68, 0.781);
+            position: relative;
+            margin: auto;
+            top: 80px;
+            z-index: 2;
+        }
+        #headform {
+            width: 100%;
+            height: 130px;
+            background: rgb(216, 54, 54);
+            clip-path: polygon(100% 0, 100% 73%, 50% 100%, 0 73%, 0 0);
+            transition: 0.5s;
+            position: absolute;
+            overflow: hidden;
+            text-align: center;
+            z-index: 5;
+        }
+        .headform h1 {
+            padding: 25px 0px 0px 10px;
+            text-align: center;
+            width: 100%;
+            font-size: 50px;
+            font-family: fantasy;
+            letter-spacing: 20px;
+            color: white;
+        }
+        .headform h3 {
+            padding: 120px 0px 0px 10px;
+            text-align: center;
+            width: 100%;
+            font-size: 70px;
+            font-family: fantasy;
+            letter-spacing: 20px;
+            color: white;
+        } 
+        .headform img {
+            width: 22%;
+            height: 15%;
+            margin-top: 15%;
+            transition: 0.4s;
+        }
+        .headform img:hover {
+            width: 25%;
+            height: 17%;
+            transition: 0.4s;
+        }
+        .dangky {
+            width: 70%;
+            margin: auto;
+            padding-top: 140px;
+        }
+        .dangky .button_dangky {
+            width: 150px;
+            height: 30px;
+            margin: 25px 15px 15px 16.8%;
+            position: absolute;
+            background: rgb(173, 7, 7);
+            border: none;
+            color: white;
+    
+        }
+        .button_dangky:hover {
+            box-shadow: 0px 10px 25px 10px #ff1b1b57;
+            background: rgb(226, 19, 19);
+        }
+        .dangky>a {
+            padding-left: 15px;
+        }
+        .signup video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hinhthucdangnhap ul {
+            width: 67%;
+            position: absolute;
+            bottom: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 30px;
+        }
+        .dangky>div {
+            height: 70px;
+        }
+        .dangky p {
+            font-weight: bold;
+            font-size: 17px;
+            color: rgb(224, 224, 224);
+        }
+        .dangky label {
+            color: red;
+            font-weight: bold;
+            float: right;
+        }
+        input[type="text"] {
+            color: rgb(223, 223, 223);
+            font-size: 15px;
+            background: none;
+            border: rgb(175, 175, 175) solid 2px;
+            outline: none;
+            border-radius: 50px;
+            padding-left: 15px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            width: 100%;
+            height: 25px;
+            margin-left: -13px;
+        }
+        .backhome{
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        @media only screen and ( max-width: 820px) {
+
+            .form{
+                width: 80%;
+                height: 700px;
+            }
+            i{
+                font-size: 90px;
+            }
+            .headform img {
+                width: 25%;
+            }
+            .headform img:hover {
+                width: 32%;
+                height: 18%;
+            }
+            .form{
+                
+                top: 200px;
+            }
+            .dangky div{
+                padding-top: 20px;
+            }
+            input[type="text"]{
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .dangky .button_dangky {
+            margin: 45px 15px 15px 21.8%;
+            }
+        }
+    </style>
+    <script>
+        function kiemtradangky()
+        {
+            var ktten,ktdc,ktemail;
+            var ten,diachi,email;
+            ten = document.getElementById("tenkhach");
+            diachi = document.getElementById("diachikhach");
+            email = document.getElementById("emailkhach");
+            if(ten.value ==0)
+            {
+                ktten="Trường này là bắt buộc"
+                tenkhach.style.border = 'red solid 3px' 
+            }
+                else 
+            {
+                ktten=""
+                tenkhach.style.border = 'greenyellow solid 3px' 
+            }
+
+            if(diachi.value==0)
+            {
+                ktdc="Trường này là bắt buộc"
+                diachikhach.style.border = 'red solid 3px' 
+            }
+                else 
+            {
+                ktdc=""
+                diachikhach.style.border = 'greenyellow solid 3px' 
+            }
+
+            if(email.value==0)
+            {
+                ktemail="Trường này là bắt buộc"
+                emailkhach.style.border = 'red solid 3px' 
+            }
+                else 
+            {
+                ktemail=""
+                emailkhach.style.border = 'greenyellow solid 3px' 
+            }
+
+            checkten.innerText=ktten;
+            checkdc.innerText=ktdc;
+            checkemail.innerText=ktemail
+            
+            if(ktten,ktdc,ktemail=="")
+            {
+            headform.style.height = '137%';
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="signup">
+        <div class="form">
+            <div id="headform" class="headform">
+                <h1>ĐĂNG KÝ</h1>
+                <h3>THÀNH CÔNG</h3>
+                <a href="homepage.html"><img src="logo.png" alt=""><p >Đi đến trang chủ</p></a>
+            </div>
+            <div id="dangky" class="dangky">
+                <div>
+                    <p>Tên</p>
+                    <input id="tenkhach" type="text">
+                    <label id="checkten" for=""></label>
+                </div>
+                <div>
+                    <p>Địa Chỉ</p>
+                    <input id="diachikhach" type="text">
+                    <label id="checkdc" for=""></label>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <input id="emailkhach" type="text">
+                    <label id="checkemail" for=""></label>
+                </div>
+                <input class="button_dangky" type="button" value="Đăng Ký" onclick="return kiemtradangky()">
+                <div class="hinhthucdangnhap">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-snapchat-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="backhome"><a href="homepage.html">Trở về trang chủ.</a></div>
+            </div>
+        </div>
+        <video src="videosignup.webm" autoplay muted loop></video>
+    </div>
+</body>
+
+</html>

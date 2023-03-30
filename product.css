@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: auto;
+    width: 100%;
+    height: 2000px;
+    background-color: rgb(228, 228, 228);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-image: url(https://wallpaperbat.com/img/567969-car-wallpaper-top-free-2560x1440-car-background.jpg);
+    width: 100%;
+    height: 380px;
+    clip-path: ellipse(100% 100% at 50% 0%);
+    background-size:100%;
+    background-position-y: -120px;
+}
+.logo{
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    background: rgb(148, 29, 29);
+    height: 90px;
+    width: 400px;
+    margin-top: -15px;
+    margin-left: -35px;
+    line-height: 80px;
+}
+.logo:hover {
+    background: rgb(175, 24, 24);
+}
+.logo span{
+    position: relative;
+    top: -25px;
+    letter-spacing: 7px;
+    font-size: 29px;
+    font-weight: bold;
+    color: rgb(196, 196, 196);
+}
+.logo img {
+    padding-top: 7px;
+    width: 75px;
+    height: 75px;
+    margin-left: 50px;
+}
+.menu_bar{
+    position: relative;
+    top: 60px;
+    width: 1150px;
+    display: flex;
+    height: 60px;
+    background-color: rgb(91, 91, 94);
+    margin: auto;
+}
+.menu{
+    display: flex;
+    height: 60px;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.content1 a{
+    margin-top: 5px;
+    display: block;
+    line-height: 50px;
+    padding: 0px 35px 0px 35px ;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.content1 a:hover{
+    color: rgb(248, 32, 32);
+    background: rgb(85, 84, 84);
+    box-shadow: 0px 0px 25px 2px rgba(255, 14, 14, 0.795);
+}
+
+
+.menulist{
+    line-height:60px;
+    text-align: center;
+    width: 60px;
+    font-size: 18px;
+    color: rgb(196, 196, 196);
+    position: relative;
+    background: none;
+    border: none;
+}
+.menulist:hover{
+    background: rgb(80, 80, 80);
+}
+.menulist ul{
+    display: none;
+    position: absolute;
+    left: -48px;
+    top: 60px;
+}
+.menulist ul::before{
+    content: '';
+    position:absolute;
+    width: 33px;
+    height: 33px;
+    background: gray;
+    top: -33px;
+    left: 38.5%;
+    clip-path: polygon(50% 40%, 0 100%, 100% 100%);
+
+}
+.menulist ul li {
+    padding: 2px 0px 5px 0px;
+    background: gray;
+    width:150px;
+    line-height: 40px;
+}
+.menulist ul li:hover {
+    background: rgb(201, 201, 201);
+}
+.menulist:hover .menulist_sub{
+    display: block;
+}
+
+.main{
+    width: 100%;
+    padding-top:50px ;
+    height: 2500px;
+}
+.main h1{
+    margin-bottom:130px;
+    font-size: 50px;
+    margin-left: 10%;
+    padding-left: 2%;
+    width: 78%;
+    line-height: 140px;
+    text-transform: capitalize;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(202, 202, 202);
+    color: rgb(34, 18, 18);
+    border-bottom: rgb(148, 29, 29) double 15px;
+}
+.danhsachsanpham{
+    width: 80%;
+    height: 1000px;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.danhsachsanpham ul{
+    width: 390px;
+    height: 470px;
+    background: rgb(219, 218, 218);;
+    margin-bottom:80px;
+    text-align: center;
+}
+.danhsachsanpham img{
+    width: 80%;
+
+}
+.hinh_hien{
+    transition: 0.3s;
+    margin-top: -15%;
+
+}
+.hinh_an{
+    transition: 0.3s;
+    margin-top: -35%;
+    opacity: 0;
+}
+.danhsachsanpham ul:hover .hinh_an{
+    opacity: 1;
+}
+.danhsachsanpham ul:hover .hinh_hien{
+    opacity: 0;
+}
+.danhsachsanpham ul:hover{
+    box-shadow: 0px 10px 25px  #888888;
+}
+.danhsachsanpham h3{
+    padding: 15px 0px 15px 0px;
+    font-weight: bold;
+}
+.dacdiem{
+    flex-flow: wrap;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+}
+.dacdiem p{
+    padding: 19px;
+}
+.nut{
+    width: 80%;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+.nut input {
+    width: 130px;
+    height: 35px;
+    border:none;
+    font-weight: bold;
+}
+.nut input:hover{
+    background: rgb(148, 29, 29);
+    color: white;
+    transition: 0.3s;
+}
+
+.chuyentrang{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.chuyentrang ul{
+    display: flex;
+    width: 35%;
+    margin: auto;
+    justify-content: space-between;
+}
+.chuyentrang ul li {
+    background-color:rgb(148, 29, 29);
+    width: 50px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+}
+.chuyentrang ul li:hover {
+    background-color:rgb(233, 31, 31);
+    transition: 0.3s;
+}
+/*tu van khach hang*/
+.hotrotuvan{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(250, 250, 250, 0.979);
+    text-align: center;
+}
+.hotrotuvan h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.dangky_tuvan{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+input[type="text"] {
+    color: #000;
+    font-size: 17px;
+    background: none;
+    border: rgb(31, 31, 31) solid 3px;
+    outline: none;
+    padding-left: 15px;
+    width: 280px;
+    height: 32px;
+}
+.button_dk{
+    width: 100px;
+    height: 40px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    background-color: rgb(165, 32, 32);
+    color: white;
+    transition: 0.2s;
+    border: none;
+}
+.button_dk:hover{
+    box-shadow: 0px 0px 70px 2px #ff5151ad;
+    background-color: rgb(233, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.tuvan_input{
+    width: 300px;
+}
+.dangky_tuvan label{
+    color: red;
+}
+#ketqua{
+    position: relative;
+    top: 30px;
+}
+/*footer*/
+.col1{
+    height: 290px;
+}
+td{
+    padding: 30px;
+}
+.col1 i{
+    padding: 20px 15px 20px 15px;
+}
+

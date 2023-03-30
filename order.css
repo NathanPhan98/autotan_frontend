@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: auto;
+    width: 100%;
+    height: 2000px;
+    background-color: rgb(228, 228, 228);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-image: url(https://www.hdnicewallpapers.com/Walls/Big/Toyota/2017_Toyota_Camry_Red_on_Road_Car_Photo.jpg);
+    width: 100%;
+    height: 380px;
+    clip-path: ellipse(100% 100% at 50% 0%);
+    background-size:100%;
+    background-position-y: -180px;
+}
+.logo{
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    background: rgb(148, 29, 29);
+    height: 90px;
+    width: 400px;
+    margin-top: -15px;
+    margin-left: -35px;
+    line-height: 80px;
+}
+.logo:hover {
+    background: rgb(175, 24, 24);
+}
+.logo span{
+    position: relative;
+    top: -25px;
+    letter-spacing: 7px;
+    font-size: 29px;
+    font-weight: bold;
+    color: rgb(196, 196, 196);
+}
+.logo img {
+    padding-top: 7px;
+    width: 75px;
+    height: 75px;
+    margin-left: 50px;
+}
+.menu_bar{
+    position: relative;
+    top: 60px;
+    width: 1150px;
+    display: flex;
+    height: 60px;
+    background-color: rgb(91, 91, 94);
+    margin: auto;
+}
+.menu{
+    display: flex;
+    height: 60px;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.content1 a{
+    margin-top: 5px;
+    display: block;
+    line-height: 50px;
+    padding: 0px 35px 0px 35px ;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.content1 a:hover{
+    color: rgb(248, 32, 32);
+    background: rgb(85, 84, 84);
+    box-shadow: 0px 0px 25px 2px rgba(255, 14, 14, 0.795);
+}
+
+.menulist{
+    line-height:60px;
+    text-align: center;
+    width: 60px;
+    font-size: 18px;
+    color: rgb(196, 196, 196);
+    position: relative;
+    background: none;
+    border: none;
+}
+.menulist:hover{
+    background: rgb(80, 80, 80);
+}
+.menulist ul{
+    display: none;
+    position: absolute;
+    left: -48px;
+    top: 60px;
+}
+.menulist ul::before{
+    content: '';
+    position:absolute;
+    width: 33px;
+    height: 33px;
+    background: gray;
+    top: -33px;
+    left: 38.5%;
+    clip-path: polygon(50% 40%, 0 100%, 100% 100%);
+
+}
+.menulist ul li {
+    padding: 2px 0px 5px 0px;
+    background: gray;
+    width:150px;
+    line-height: 40px;
+}
+.menulist ul li:hover {
+    background: rgb(201, 201, 201);
+}
+.menulist:hover .menulist_sub{
+    display: block;
+}
+.main{
+    width: 100%;
+    padding-top:50px ;
+    height: 2500px;
+}
+.main h1{
+    margin-bottom:10px;
+    font-size: 50px;
+    margin-left: 10%;
+    padding-left: 2%;
+    width: 78%;
+    line-height: 140px;
+    text-transform: capitalize;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgb(202, 202, 202);
+    color: rgb(34, 18, 18);
+    border-bottom: rgb(148, 29, 29) double 15px;
+}
+.main h2{
+    text-align: center;
+    margin-bottom:70px;
+}
+.main_content_dathang{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.input_sp{
+    width: 55%;
+}
+form div{
+    margin-bottom:53.3px;
+}
+form p,.thanhtien p{
+    font-size: 25px;
+    line-height: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.thanhtien{
+    height:60px;
+    width: 90%;
+    padding-left: 5px;
+    color: red;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: grey solid 4px;
+}
+.img_dathang{
+    width: 40%;
+    padding-left: 5%;
+}
+.img_dathang img {
+    width: 101%;
+    height: 94.3%;
+}
+#dathang_button, #laithu_button{
+    height: 50px;
+    width: 300px;
+    margin-left: 23%;
+    margin-bottom: 20%;
+    font-size: 25px;
+    box-shadow: 0px 0px 20px 2px #ff5151ad;
+    background-color: rgb(194, 36, 36);
+    color: rgb(211, 211, 211);
+    transition: 0.4s;
+    border: none;
+}
+#dathang_button:hover, #laithu_button:hover{
+    box-shadow: 0px 0px 70px 2px #ff5151ad;
+    background-color: rgb(233, 0, 0);
+    color: rgb(255, 255, 255);
+}
+/*lai thu*/
+.main_content_laithu{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.img_laithu{
+    width: 40%;
+}
+.img_laithu img {
+    width: 101%;
+    height: 94.3%;
+}
+.input_laithu{
+    width: 55%;
+    margin-left: 10%;
+}
+.input_laithu h2{
+    margin-left: -12%;
+}
+.input_laithu div{
+    margin-left: 0%;
+}
+input[type="text"],input[type="datetime"]{
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    background: none;
+    border: rgb(175, 175, 175) solid 4px;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 20px;
+    width: 86%;
+    height: 40px;
+}
+select{
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    background: none;
+    border: rgb(175, 175, 175) solid 4px;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 20px;
+    width: 91%;
+    height: 50px;
+}
+/*footer*/
+.footer{
+    margin-top: 40px;
+}
+.col1{
+    height: 290px;
+}
+td{
+    padding: 30px;
+}
+.col1 i{
+    padding: 20px 15px 20px 15px;
+}

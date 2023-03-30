@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+    <style>
+        @media only screen and (max-width: 820px) {
+            body {
+                width: 820px;
+            }
+    
+            header {
+                background-repeat: no-repeat;
+                background-position-y: 0px;
+                width: 100%;
+            }
+    
+            .menu {
+                display: none;
+            }
+    
+            .menu_bar {
+                width: 50%;
+            }
+    
+            .main {
+                width: 100%;
+    
+            }
+    
+            .input_sp {
+                width: 80%;
+                margin: auto;
+                padding-left: 50px;
+                color: white;
+            }
+    
+            .main_content_dathang {
+                width: 100%;
+                margin: auto;
+                height: 55%;
+            }
+    
+            .main_content_dathang img {
+                width: 730px;
+            }
+    
+            .img_dathang {
+                position: absolute;
+                z-index: -1;
+            }
+    
+            .input_laithu {
+                width: 80%;
+                margin: auto;
+                padding-left: 85px;
+                color: white;
+            }
+    
+            .main_content_laithu {
+                width: 100%;
+                margin: auto;
+                height: 44%;
+            }
+    
+            .main_content_laithu img {
+                width: 730px;
+                height: 10%;
+            }
+    
+            .img_laithu {
+                padding-left: 5.5%;
+                position: absolute;
+                z-index: -1;
+            }
+    
+            .footer {
+                position: relative;
+                bottom: -16%;
+                height: 290px;
+            }
+    
+            .col1 {
+                height: 600px;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!--thanh menu -->
+        <div class="head">
+            <div class="menu_bar">
+                <a href="homepage.html"><div class="logo"><img src="logo.png" alt=""><span>Auto-Tan</span></div></a>
+                <div class="menu">
+                    <ul>
+                        <li class="content1"><a href="introduce.html"> Giới Thiệu</a></li>
+                    </ul>
+                    <ul>
+                        <li class="content1"><a href="product.html">Sản Phẩm</a></li>
+                    </ul>
+                    <ul>
+                        <li class="content1"><a href="order.html">Đặt Hàng</a></li>
+                    </ul>
+                    <ul>
+                        <li class="content1"><a href="signup.html">Đăng Ký</a></li>
+                    </ul>
+                </div>
+                <div class="menulist"><i class="fas fa-bars"></i>
+                    <ul class="menulist_sub">
+                        <li><a href="introduce.html">Giới Thiệu</a></li>
+                        <li><a href="product.html">Sản Phẩm</a></li>
+                        <li><a href="order.html">Đặt Hàng</a></li>
+                        <li><a href="signup.html">Đăng Ký</a></li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+    </header>
+    <!-- main -->
+    <div class="main">
+        <h1>Đặt Hàng</h1>
+        <h2>Thủ Tục Nhanh Gọn - Nhận Xe Nhanh Chóng</h2>
+        <div class="main_content_dathang">
+            <div class="input_sp">
+                <form action="">
+                    <div><p>Loại Xe</p>
+                        <select name="loaixe" id="loaixe">
+                            <option value="0">chọn loại</option>
+                            <option value="1">Alphard</option>
+                            <option value="2">Camry</option>
+                            <option value="3">Fortuner</option>
+                            <option value="4">Innova</option>
+                        </select>
+                    </div>
+                    <div><p>Màu sắc</p>
+                        <select name="" id="mausac">
+                            <option value="0">chọn màu</option>
+                            <option value="1">Xanh</option>
+                            <option value="2">Đỏ</option>
+                            <option value="3">Trắng</option>
+                            <option value="4">Đen</option>
+                        </select>
+                    </div>
+                    <div><p>Chọn Phụ Kiện</p>
+                        <select name="" id="phukien">
+                            <option value="0">chọn loại</option>
+                            <option value="1">Có</option>
+                            <option value="2">Không</option>
+                        </select>
+                    </div>
+                    <div><p>Nơi Đăng Ký Xe</p>
+                        <select name="" id="dkxe">
+                            <option value="0">chọn nơi</option>
+                            <option value="1">TP-HCM</option>
+                            <option value="2">Hà Nội</option>
+                            <option value="3">Trà Vinh</option>
+                            <option value="4">Cần Thơ</option>
+                            <option value="5">Sóc Trăng</option>
+                            <option value="6">Vĩnh Long</option>
+                            <option value="7">Cà Mau</option>
+                        </select>
+                    </div>
+                    <div><p>Loại Khách Hàng</p>
+                        <select name="" id="loaikhach">
+                            <option value="0">chọn loại</option>
+                            <option value="1">Cá Nhân</option>
+                            <option value="2">Doanh Nghiệp</option>
+                        </select>
+                    </div>
+                    <div><p>Gói Tính Phí Lưu Hành Đường Bộ</p>
+                        <select name="" id="phiduongbo">
+                            <option value="0">chọn gói</option>
+                            <option value="1">1 Tháng</option>
+                            <option value="2">6 Tháng</option>
+                            <option value="3">12 Tháng</option>
+                            <option value="4">18 Tháng</option>
+                        </select>
+                    </div>
+                    <div class="thanhtien">
+                        <p>Giá Nêm Yết</p>
+                        <label id="tt"></label>
+                    </div>
+                </form>
+                <div><input id="dathang_button" type="button" value="Đặt Hàng Ngay" onclick="tinhThanhTien()"></div>
+            </div>
+            <div class="img_dathang"><img src="https://iphone-wallpaper.pics/wallpaper/a/u/auto-front-view-blue-wallpaper-1440x2560_fbccc9081c16b6a6076fea46d2b835fb_raw.jpg" alt=""></div>
+        </div>
+        
+    <h1>Đăng Ký Lái Thử</h1>
+    <div class="main_content_laithu">
+        <div class="img_laithu"><img src="https://w0.peakpx.com/wallpaper/1015/186/HD-wallpaper-toyota-supra-black-car-cars-japan-jdm-supra-toyota-turbo.jpg" alt=""></div>
+        <div class="input_laithu">
+            <h2>Trải Nghiệm Trước Khi Mua Xe</h2>
+            <form action="">
+                <div>
+                    <p>Họ và Tên</p>
+                    <input id="hoten" type="text">
+                </div>
+                <div>
+                    <p>Số Điện Thoại</p>
+                    <input id="phone" type="text">
+                </div>
+                <div><p>Tên Xe</p>
+                    <select name="" id="">
+                        <option value="0">chọn loại</option>
+                        <option value="1">Alphard</option>
+                        <option value="2">Camry</option>
+                        <option value="2">Fortuner</option>
+                        <option value="2">Innova</option>
+                    </select>
+                </div>
+                <div><p>Tỉnh/Thành Phố</p>
+                    <select name="" id="">
+                        <option value="0">chọn nơi</option>
+                        <option value="1">TP-HCM</option>
+                        <option value="2">Hà Nội</option>
+                        <option value="3">Trà Vinh</option>
+                        <option value="4">Cần Thơ</option>
+                        <option value="5">Sóc Trăng</option>
+                        <option value="6">Vĩnh Long</option>
+                        <option value="7">Cà Mau</option>
+                    </select>
+                </div>
+                <div >
+                    <p>Ngày Dự Kiến</p>
+                    <input type="datetime" placeholder="dd/mm/yyyy"> <i style="margin-left: -45px;" class="fa fa-calendar"></i>
+                </div>
+            </form>
+            <div><input id="laithu_button" type="button" value="Lái Thử Ngay"></div>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <table width= "100%" style="color: white; background: rgb(58, 58, 58);">
+            <tr>
+                <td><div>CỬA HÀNG Ô TÔ TOYOTA AUTO-TAN</div></td>
+                <td><div>DÒNG XE</div></td>
+                <td><div>CHÍNH SÁCH</div></td>
+                <td><div>MẠNG XÃ HỘI</div></td>
+            </tr>
+            <tr class="row2">
+                <td style="width: 60%;">
+                    <div class="col1">
+                        <div>Chuyên cung cấp các dòng sản phẩm xe ô tô của Toyota Việt Nam, các dịch vụ bảo hành bảo dưỡng, phụ kiện chính hãng.</div><br>
+                        <div>Về Toyota !<br> Toyota Motor Corporation là một nhà sản xuất ô tô đa quốc gia của Nhật Bản có trụ sở tại Toyota, Aichi, Nhật Bản. Trong năm 2017, cơ cấu doanh nghiệp của Toyota bao gồm 364.445 nhân viên trên toàn thế giới Tính đến tháng 9 năm 2018, đây là công ty lớn thứ sáu trên thế giới tính theo doanh thu.</div><br>
+                        <div>Địa Chỉ: Duyên Hải, Trà Vinh.</div>
+                    </div>
+                </td>
+                <td style="width: 10%;">
+                    <div class="col1">
+                        <div>SUV</div>
+                        <div>Sedan</div>
+                        <div>Pick Up</div>
+                        <div>Hatchback</div>
+                        <div>MPV</div>
+                    </div>
+                </td>
+                <td style="width: 20%;">
+                    <div class="col1">
+                        
+                            <div>Chính sách thanh toán</div>
+                            <div>Chính sách giao nhận - vận chuyển</div>
+                            <br>
+                            <div>THANH TOÁN</div>
+                            <div>thanh toán truc tiep</div>
+                            <div>Thanh toan qua ngan hang</div>
+                    </div>
+                </td>
+                <td  style="width: 10%;">
+                    <div class="col1">
+                            <div class="socialss" style="display: flex; font-size: 35px;text-align: center;">
+                                <div><a href=""><i class="fab fa-facebook-square"></i></a></div>
+                                <div><a href=""><i class="fab fa-twitter-square"></i></a></div>
+                                <div><a href=""><i class="fab fa-snapchat-square"></i></a></div>
+                                <div><a href=""><i class="fab fa-youtube-square"></i></a></div>
+                            </div>
+
+                            <div style="border-top: white solid 2px;" >
+                                <div>Email : tanphannhat@gmail.com </div>
+                                <div>Email : autotan@gmail.com</div>                
+                            </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

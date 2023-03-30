@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: auto;
+    width: 100%;
+    background-image: url(https://www.bmw.vn/content/dam/bmw/common/home/teaser/bmw-7series-sedan-gklplus-teaser-desktop.jpg.asset.1547636126503.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+}
+.logo{
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    background: rgb(148, 29, 29);
+    height: 90px;
+    width: 400px;
+    margin-top: -15px;
+    margin-left: -35px;
+    line-height: 80px;
+}
+.logo:hover {
+    background: rgb(175, 24, 24);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.logo span{
+    position: relative;
+    top: -25px;
+    letter-spacing: 7px;
+    font-size: 29px;
+    font-weight: bold;
+    color: rgb(196, 196, 196);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo img {
+    padding-top: 7px;
+    width: 75px;
+    height: 75px;
+    margin-left: 50px;
+}
+.head{
+    position: absolute;
+    width: 1536px;
+    z-index: 1;
+    margin-top: 40px;
+}
+.menu_bar{
+    width: 1150px;
+    display: flex;
+    height: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 150px;
+    background-color: rgb(91, 91, 94);
+    margin: auto;
+}
+.menu{
+    display: flex;
+    height: 60px;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.content1 a{
+    margin-top: 5px;
+    display: block;
+    line-height: 50px;
+    padding: 0px 35px 0px 35px ;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.content1 a:hover{
+    color: rgb(248, 32, 32);
+    background: rgb(85, 84, 84);
+    box-shadow: 0px 0px 25px 2px rgba(255, 14, 14, 0.795);
+}
+
+.menulist{
+    line-height:60px;
+    text-align: center;
+    width: 60px;
+    font-size: 18px;
+    color: rgb(196, 196, 196);
+    position: relative;
+    background: none;
+    border: none;
+}
+.menulist:hover{
+    background: rgb(80, 80, 80);
+}
+.menulist ul{
+    display: none;
+    position: absolute;
+    left: -48px;
+    top: 60px;
+}
+.menulist ul::before{
+    content: '';
+    position:absolute;
+    width: 33px;
+    height: 33px;
+    background: gray;
+    top: -33px;
+    left: 38.5%;
+    clip-path: polygon(50% 40%, 0 100%, 100% 100%);
+
+}
+.menulist ul li {
+    padding: 2px 0px 5px 0px;
+    background: gray;
+    width:150px;
+    line-height: 40px;
+}
+.menulist ul li:hover {
+    background: rgb(201, 201, 201);
+}
+.menulist:hover .menulist_sub{
+    display: block;
+}
+/*content*/
+video{
+    width: 1536px;
+    z-index: -1;
+    position: absolute;
+    top: -100px; 
+    margin: auto;
+}
+.bang_head{
+    padding: 200px 0px 200px 0px ;
+}
+.tenbang{
+    font-size: 80px; 
+    top: -650px;
+    width: 50%;
+    padding: 15px 0px 15px 0px;
+    text-align: center; 
+    margin: auto;
+    font-weight: bold;
+    color: rgb(248, 61, 61);
+    border-top: rgb(148, 29, 29) solid 5px;
+    border-bottom: rgb(148, 29, 29) solid 5px;
+    background-color: rgba(216, 191, 216, 0.733);
+}
+.main{
+    width: 100%;
+    height: 2000px;
+    position: relative;
+    background: rgb(228, 227, 227);
+    border-top: brown double 10px;
+}
+.gioithieu{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+.gioithieu_sub_1{
+    width: 100%;
+    height:800px;
+    display: flex;
+    padding-bottom: 10%;
+}
+.gioithieu_sub_1_pict{
+    background-color: rgb(240, 240, 240);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 39% 100%, 0% 100%);
+    height: 100%;
+    width: 70%;
+}
+.gioithieu_sub_1_pict img {
+    width: 170%;
+    position: relative;
+    top: -30px;
+    left: -60%;
+    overflow: hidden;
+}
+.gioithieu_sub_1_info{
+    height: 80%;
+    width: 50%;
+    font-size: 20px;
+    padding: 20px 60px 0px 60px;
+}
+.gioithieu_sub_1_info div{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+    padding-bottom: 20px;
+}
+.gioithieu_sub_2{
+    width: 100%;
+    height:15%;
+}
+.gioithieu_sub_2_pict{
+    background-color: rgb(240, 240, 240);
+    clip-path: polygon(70% 0, 100% 0%, 100% 100%, 0 100%);
+    height: 96%;
+    width: 36%;
+    float:right;
+}
+.gioithieu_sub_2_pict img {
+    width: 100%;
+    position: relative;
+    top: -30px;
+    overflow: hidden;
+}
+.gioithieu_sub_2_info{
+    width: 60%;
+    font-size: 20px;
+    padding: 0px 60px 0px 70px;
+    height: 25%;
+}
+.gioithieu_sub_2_info div{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+}
+
+.gioithieu_sub_mid{
+    width: 100%;
+    display: flex;
+}
+.gioithieu_sub_3_pict{
+    clip-path: polygon(30% 0, 97% 0, 67% 100%, 8% 100%, 8% 80%);
+    background: royalblue;
+    width: 60%;
+    margin-top: 3%;
+    height: 240px;
+}
+.gioithieu_sub_3_pict img{
+    width: 54%;
+    position: absolute;
+    left: 4%;
+    margin-top: -6%;
+}
+.gioithieu_sub_4_pict{
+    clip-path: polygon(33% 0, 85% 0, 85% 30%, 65% 100%, 0 100%);
+    background: rgb(225, 65, 100);
+    width: 55%;
+    height: 240px;
+    position:absolute;
+    margin-left: 45%;
+}
+.gioithieu_sub_4_pict img{
+    width: 85%;
+    position: absolute;
+    left: 0%;
+    top: -60%;
+}
+
+.gioithieu_sub_5{
+    width: 100%;
+    height:800px;
+    display: flex;
+
+    padding-top: 1%;
+}
+.gioithieu_sub_5_pict{
+    background-color: rgb(240, 240, 240);
+    clip-path: polygon(0 0, 100% 0%, 30% 100%, 0% 100%);
+    height: 350px;
+    width: 40%;
+}
+.gioithieu_sub_5_pict img {
+    width: 100%;
+    position: relative;
+    top: -15%;
+}
+.gioithieu_sub_5_info{
+    height: 80%;
+    width: 60%;
+    font-size: 18px;
+    padding: 0px 60px 0px 60px;
+}
+.gioithieu_sub_5_info div{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+    padding-bottom: 20px;
+}
+/*tu van khach hang*/
+.hotrotuvan{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(250, 250, 250, 0.979);
+    text-align: center;
+}
+.hotrotuvan h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.dangky_tuvan{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+input[type="text"] {
+    color: #000;
+    font-size: 17px;
+    background: none;
+    border: rgb(2, 2, 2) solid 3px;
+    outline: none;
+    padding-left: 15px;
+    width: 280px;
+    height: 32px;
+}
+.button_dk{
+    width: 100px;
+    height: 40px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    background-color: rgb(165, 32, 32);
+    color: white;
+    transition: 0.2s;
+    border: none;
+}
+.button_dk:hover{
+    box-shadow: 0px 0px 70px 2px #ff5151ad;
+    background-color: rgb(233, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.tuvan_input{
+    width: 300px;
+}
+.dangky_tuvan label{
+    color: red;
+}
+#ketqua{
+    position: relative;
+    top: 30px;
+}
+/*footer*/
+.col1{
+    height: 290px;
+}
+td{
+    padding: 30px;
+}
+.col1 i{
+    padding: 20px 15px 20px 15px;
+}
